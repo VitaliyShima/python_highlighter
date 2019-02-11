@@ -31,9 +31,9 @@ def create_app():
         """Markup given text.
         @:param text - string text to be marked
         @:return marked text, e.g., <mark>highlighted text</mark>."""
-
-        text = "<mark>" + text + "</mark>"
         result = text
+
+        # TODO: add an implementation
 
         return result
 
@@ -41,10 +41,9 @@ def create_app():
         """Markup searched string in given text.
         @:param text - string text to be processed
         @:return marked text, e.g., "sample text <mark>highlighted part</mark> rest of the text"."""
-
-        if expr in text:
-            text = text.replace(expr, markup_text(expr))
         result = text
+
+        # TODO: add an implementation
 
         return result
 
